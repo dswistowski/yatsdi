@@ -1,0 +1,35 @@
+{
+  "name": "yatsdi",
+  "version": "0.0.1",
+  "description": "Yet Another TypeScript Dependency Injection",
+  "author": {
+    "email": "damian@swistowski.org",
+    "name": "Damian Swistowski",
+    "url": "https://damian.swistowski.org"
+  },
+  "scripts": {
+    "build": "tsc && vite build -c vite.config.prod.ts",
+    "watch": "tsc && vite build --watch",
+    "test": "vitest",
+    "format": "prettier . --write && eslint . --fix",
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "typescript": "^4.6.4",
+    "vite": "^4.0.0",
+    "vitest": "^0.30.1",
+    "eslint": "^8.40.0",
+    "prettier": "^2.7.1",
+    "vite-plugin-dts": "^2.3.0"
+  },
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/yatsdi.es.js",
+      "require": "./dist/yatsdi.umd.js"
+    }
+  }
+}
