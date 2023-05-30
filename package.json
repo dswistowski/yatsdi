@@ -11,6 +11,7 @@
     "build": "tsc && vite build -c vite.config.prod.ts",
     "watch": "tsc && vite build --watch",
     "test": "vitest",
+    "typecheck": "vitest typecheck",
     "format": "prettier . --write && eslint . --fix",
     "lint": "eslint ."
   },
