@@ -16,6 +16,6 @@ export default defineConfig({
       name: "yatsdi",
       formats: ["es", "umd"],
       fileName: (format) => `yatsdi.${format}.js`,
-    }
+    },
   },
 });
