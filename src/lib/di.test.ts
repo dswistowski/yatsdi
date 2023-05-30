@@ -1,5 +1,7 @@
 import { describe, it, expect } from "vitest";
 
+import { makeContainer, makeToken } from "./di";
+
 describe("container", () => {
   it("can bind token to value", () => {
     const token = makeToken<string>();
