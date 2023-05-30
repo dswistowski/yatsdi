@@ -5,9 +5,9 @@ export function makeToken<T>(): Token<T> {
 
 export function makeContainer() {
   return {
-    bind(token: Token<any>) {
+    bind<T>(token: Token<T>) {
       return {
-        toValue(value: any) {},
+        toValue(value: T) {},
       };
     },
     get(token: Token<any>) {
